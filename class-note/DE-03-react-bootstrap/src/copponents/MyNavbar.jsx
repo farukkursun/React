@@ -4,7 +4,7 @@ import logo from "../assets/img/logo.png"
 
 const MyNavbar = () => {
   return (
-    <div>
+    
       <Navbar bg="light" expand="lg">
         <Container fluid>
           <Navbar.Brand href="" > <Image src={logo} /> </Navbar.Brand>
@@ -18,13 +18,13 @@ const MyNavbar = () => {
               <Nav.Link href="#action1">Home</Nav.Link>
               <Nav.Link href="#action2">People</Nav.Link>
               <NavDropdown title="Courses" id="navbarScrollingDropdown">
-                <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+                <NavDropdown.Item href="#action3">Full-Stack</NavDropdown.Item>
                 <NavDropdown.Item href="#action4">
-                  Another action
+                  Data Science
                 </NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item href="#action5">
-                  Something else here
+                 Devops
                 </NavDropdown.Item>
               </NavDropdown>
               
@@ -41,7 +41,7 @@ const MyNavbar = () => {
           </Navbar.Collapse>
         </Container>
       </Navbar>
-    </div>
+   
   );
 };
 
