@@ -1,7 +1,7 @@
 import "./Card.scss"
 
 const Card = ({dataa}) => {
-    console.log(dataa);
+    // console.log(dataa);
   return (
     <div className='konteynir'>
     {dataa.map((veri)=>{
