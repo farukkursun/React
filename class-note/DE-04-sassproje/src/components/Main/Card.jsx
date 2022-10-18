@@ -1,4 +1,4 @@
-import React from 'react'
+
 
 const Card = (data) => {
     const {title, image,desc} =data
