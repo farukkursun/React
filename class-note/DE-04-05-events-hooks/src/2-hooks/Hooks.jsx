@@ -10,8 +10,6 @@ const [bilgi, setBilgi]  = useState({
     yas: 30
 }) 
 
-
-
 const arttir =()=>{
 setSayac(sayac+1)
 }
@@ -23,7 +21,6 @@ const azalt =()=>{
 
 
 // }
-
 const degistir=()=>{
 
     if(bilgi.isim==="Mevlüt"){

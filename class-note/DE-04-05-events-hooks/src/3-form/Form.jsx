@@ -40,7 +40,7 @@ const formAlindi = ()=>{
       type="text"
       className="form-control"
       id="username" 
-      onChange={(e)=>setAd(e.target.value)}
+      onInput={(e)=>setAd(e.target.value)}
       placeholder=""
     />
   </div>
@@ -49,7 +49,6 @@ const formAlindi = ()=>{
      Password
     </label>
     <input
-      type="password"
       className="form-control"
       id="password"
       onChange={(a)=>setPassword(a.target.value)}
