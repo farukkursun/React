@@ -16,15 +16,18 @@
   border-radius: 20px;
    
 }
+.card:hover{
+    box-shadow: 0 0 4px 2px rgb(51, 79, 235);
+}
 .cerceve{
     position: relative;
-    background-color: orange;
+    background-color:orange;
     padding: 1rem;
    border-radius: 15px;
 }
 /* .mavi{
-    background-color: aqua;
-    height: 3rem;
+    background-color: rgb(112, 199, 233);
+    height: 5rem;
     width: 100%;
     position: absolute;
     top: 20rem;
@@ -42,6 +45,10 @@
    
     height: 73px;
     object-fit: cover;
+}
+.resim:hover{
+    height: 80px;
+    transition: all 0.5s ease-in-out;
 }
 .card-text{
     font-size: 1rem;

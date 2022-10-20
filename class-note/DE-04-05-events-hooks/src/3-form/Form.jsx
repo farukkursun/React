@@ -8,70 +8,73 @@
 
 import { useState } from "react";
 
-
 const Form = () => {
-const [ad, setAd] = useState('')
-const [password, setPassword] = useState('')
-const [country, setCountry] = useState('')
+  const [ad, setAd] = useState("");
+  const [password, setPassword] = useState("");
+  const [country, setCountry] = useState("");
 
-const formAlindi = ()=>{
-  alert(
-  `Username: ${ad}
+  const formAlindi = () => {
+    alert(
+      `Username: ${ad}
   Password: ${password}
   Country: ${country}`
-
-
-
-  )
-}
-
-
+    );
+  };
 
   return (
     <div className="container text-center mt-4">
-<h1>***********************************************************************</h1>
-<h1>FORMS(EVENTS)</h1>
-<form onSubmit={formAlindi}>
-<div className="mb-3">
-    <label htmlFor="username" className="form-label">
-      Username: <span className="text-danger fw-bold">{ad}</span>
-    </label>
-    <input
-      type="text"
-      className="form-control"
-      id="username" 
-      onInput={(e)=>setAd(e.target.value)}
-      placeholder=""
-    />
-  </div>
-  <div className="mb-3">
-    <label htmlFor="password" className="form-label">
-     Password
-    </label>
-    <input
-      className="form-control"
-      id="password"
-      onChange={(a)=>setPassword(a.target.value)}
-      placeholder=""
-    />
-  </div>
-<div>
-    <div className="mb-3">
-          <label htmlFor="country">Countyr: <span className="text-danger fw-bold">{country}</span> </label>
-          <select className="form-select" name='country' id='country'
-          onChange={(e)=>setCountry(e.target.value)}>
-          
-            <option value='' >Country</option>
-            <option value="türkiye">Türkiye</option>
-            <option value="deutchland">Deutchland</option>
-            <option value="usa">USA</option>
-          </select>
+      <h1>
+        ***********************************************************************
+      </h1>
+      <h1>FORMS(EVENTS)</h1>
+      <form onSubmit={formAlindi}>
+        <div className="mb-3">
+          <label htmlFor="username" className="form-label">
+            Username: <span className="text-danger fw-bold">{ad}</span>
+          </label>
+          <input
+            type="text"
+            className="form-control"
+            id="username"
+            onInput={(e) => setAd(e.target.value)}
+            placeholder=""
+          />
         </div>
-</div>
-<button type="submit" className="btn btn-primary">GÖNDER(submit)</button>
-</form>
+        <div className="mb-3">
+          <label htmlFor="password" className="form-label">
+            Password
+          </label>
+          <input
+            className="form-control"
+            id="password"
+            onChange={(a) => setPassword(a.target.value)}
+            placeholder=""
+          />
+        </div>
+        <div>
+          <div className="mb-3">
+            <label htmlFor="country">
+              Countyr: <span className="text-danger fw-bold">{country}</span>{" "}
+            </label>
+            <select
+              className="form-select"
+              name="country"
+              id="country"
+              onChange={(e) => setCountry(e.target.value)}
+            >
+              <option value="">Country</option>
+              <option value="türkiye">Türkiye</option>
+              <option value="deutchland">Deutchland</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" className="btn btn-primary">
+          GÖNDER(submit)
+        </button>
+      </form>
     </div>
   );
 };
 
-export default Form
+export default Form;
