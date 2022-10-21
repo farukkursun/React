@@ -3,7 +3,7 @@ import { useState } from "react";
 import "../card/Card.css";
 
 const Item = ({ veri }) => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   // console.log(veri);
 
@@ -13,21 +13,17 @@ const Item = ({ veri }) => {
         <div className="card " onClick={() => setOpen(!open)}>
           <div className="card-body">
             {open ? (
-              veri.options.map((item) => (
-                <p className="card-text">
-                  {" "}
-                  <li> {item} </li>{" "}
-                </p>
-              ))
-            ) : (
               <div>
-                <div>
-                  <img className="resim" src={veri.img} alt="" />
-                </div>
+                <img className="resim" src={veri.img} alt="" />
+
                 <div>
                   <h5 className="card-title text-black">{veri.name}</h5>
                 </div>
               </div>
+            ) : (
+              veri.options.map((item) => (
+                <li className="card-text"> {item} </li>
+              ))
             )}
           </div>
         </div>

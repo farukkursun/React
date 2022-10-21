@@ -1,4 +1,4 @@
-/* @import "bootstrap/dist/css/bootstrap.min.css"; */
+
 .baslikresim{
     width: 250px;
     text-align: center;
@@ -25,14 +25,7 @@
     padding: 1rem;
    border-radius: 15px;
 }
-/* .mavi{
-    background-color: rgb(112, 199, 233);
-    height: 5rem;
-    width: 100%;
-    position: absolute;
-    top: 20rem;
-    transform: rotate(30deg);
-} */
+
 .kartcontainer{
     
     gap: 1rem;

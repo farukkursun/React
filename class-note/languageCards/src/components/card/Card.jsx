@@ -11,7 +11,7 @@ const Card = () => {
         <img className="baslikresim" src={baslik} alt="" />
       </div>
       <div className="cerceve">
-        <h2 className=" mb-2 text-white">Languages</h2>
+        <h2 className=" mb-4 text-white">Languages</h2>
         {/* <div className="mavi"></div> */}
         <div className="kartcontainer">
           {languages.map((veri) => {
