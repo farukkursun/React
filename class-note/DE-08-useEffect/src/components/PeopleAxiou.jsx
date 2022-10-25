@@ -1,6 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import { useEffect } from "react";
+import faker from "faker";
 
 const PeopleAxiou = () => {
   const [insanlar, setInsanlar] = useState([]);
@@ -12,13 +13,17 @@ const PeopleAxiou = () => {
       .catch((error) => console.log(error));
   }, []);
   // console.log(insanlar);
+  const veri = {
+    id: insanlar.length + 1,
+    name: faker.name.findName(),
+    phone: faker.phone.phoneNumber(),
+  };
   const postInsan = () => {
     axios
       .post("https://jsonplaceholder.typicode.com/users", {
-        name: "ayse",
-        phone: 11111122233,
+        veri,
       })
-      .then((res) => setInsanlar([...insanlar, res.data]));
+      .then((res) => setInsanlar([...insanlar, res.data.veri]));
   };
   console.log(insanlar);
 
