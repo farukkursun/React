@@ -1,23 +1,15 @@
 import React from "react";
-import {
-  Navbar,
-  Container,
-  Nav,
-  NavDropdown,
-  Form,
-  FormControl,
-  Button,
-} from "react-bootstrap";
+import { Navbar, Container, Nav } from "react-bootstrap";
 import logo from "../img/logo.png";
+import { Link, NavLink } from "react-router-dom";
 //!react-bootstrap MyNavbar component
 const MyNavbar = () => {
   return (
     <Navbar bg="light" expand="lg">
       <Container fluid>
-        <Navbar.Brand href="#">
-          {" "}
-          <img src={logo} alt="" />{" "}
-        </Navbar.Brand>
+        <Link to="/">
+          <img src={logo} alt="" />
+        </Link>
         <Navbar.Toggle aria-controls="navbarScroll" />
         <Navbar.Collapse id="navbarScroll">
           <Nav
@@ -25,13 +17,35 @@ const MyNavbar = () => {
             style={{ maxHeight: "100px" }}
             navbarScroll
           >
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">People</Nav.Link>
-            <Nav.Link href="#action3">People</Nav.Link>
-           
+            <NavLink
+              style={({ isActive }) => ({ color: isActive && "red" })}
+              className="nav-link"
+              to="/"
+            >
+              Home
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => ({ color: isActive && "red" })}
+              className="nav-link"
+              to="/teacher"
+            >
+              Teacher
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => ({ color: isActive && "red" })}
+              className="nav-link"
+              to="/courses"
+            >
+              Courses
+            </NavLink>
+            <NavLink
+              style={({ isActive }) => ({ color: isActive && "red" })}
+              className="nav-link"
+              to="/contact"
+            >
+              Contact
+            </NavLink>
           </Nav>
-
-       
         </Navbar.Collapse>
       </Container>
     </Navbar>
