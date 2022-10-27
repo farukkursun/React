@@ -2,9 +2,9 @@ import React from "react";
 import { FaTimesCircle } from "react-icons/fa";
 const GorevleriGoster = ({ gorevler, setGorevler }) => {
   // console.log(gorevler);
-  const deleteGorev =(id)=>{
-setGorevler(gorevler.filter((i)=>i.id!==id))
-  }
+  const deleteGorev = (id) => {
+    setGorevler(gorevler.filter((i) => i.id !== id));
+  };
   return (
     <div>
       {gorevler.map((gorev) => {
@@ -14,11 +14,19 @@ setGorevler(gorevler.filter((i)=>i.id!==id))
             className={bittiMi ? "trueStil" : "falseStil"}
             key={id}
             onDoubleClick={() =>
-              setGorevler(gorevler.map((i)=> i.id===id ? {...i,bittiMi:!i.bittiMi}:i))
+              setGorevler(
+                gorevler.map((i) =>
+                  i.id === id ? { ...i, bittiMi: !i.bittiMi } : i
+                )
+              )
             }
           >
             <h3>
-              {text} <FaTimesCircle style={{ color: "red" }} onClick={()=>deleteGorev(id)}/>
+              {text}{" "}
+              <FaTimesCircle
+                style={{ color: "red" }}
+                onClick={() => deleteGorev(id)}
+              />
             </h3>
             <h6>{day}</h6>
           </div>

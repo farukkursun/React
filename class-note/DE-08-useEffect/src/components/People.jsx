@@ -11,7 +11,7 @@ const People = () => {
       .then((res) => res.json())
       .then((data) => setInsanlar(data));
   }, []);
-
+console.log(insanlar);
   return (
     <div className="container text-center mt-4">
       <div className="row">

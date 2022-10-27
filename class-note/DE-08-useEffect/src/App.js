@@ -5,8 +5,8 @@ import PeopleAxiou from "./components/PeopleAxiou";
 function App() {
   return (
     <div>
-      {/* <People /> */}
-      <PeopleAxiou />
+      <People />
+      {/* <PeopleAxiou /> */}
     </div>
   );
 }
