@@ -6,7 +6,7 @@ import isa from '../img/isa.jpeg'
 
 const Slider = () => {
   return (
-    <Carousel fade autoPlay='true' interval='5000'>
+    <Carousel fade autoPlay={true} interval={5000}>
       <Carousel.Item>
         <img
           className="d-block w-100"
