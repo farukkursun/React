@@ -10,7 +10,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import NotFound from "./pages/NotFound";
 import TeacherDetails from "./pages/TeacherDetails";
 import CardDetails from "./pages/CardDetails";
-
+import './App.css'
 const App = () => {
   return (
     <div>
