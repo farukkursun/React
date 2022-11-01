@@ -1,9 +1,25 @@
-import React from 'react'
+import React from "react";
+import ContainerSSS from "./styles/ContainerSSS";
+import data from "../data.js";
+import ImageSSS from "./styles/ImageSSS";
+import KartSSS from "./styles/KardSSS";
 
 const Card = () => {
   return (
-    <div>Card</div>
-  )
-}
+    <ContainerSSS>
+      {data.map((item) => {
+        return (
+          <KartSSS key={item.id} ters={item.id % 2 === 0 && "row-reverse"}>
+            <div>
+              <h2>{item.title}</h2>
+              <p>{item.body}</p>
+            </div>
+            <ImageSSS src={`./images/${item.image}`}></ImageSSS>
+          </KartSSS>
+        );
+      })}
+    </ContainerSSS>
+  );
+};
 
-export default Card
+export default Card;
