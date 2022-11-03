@@ -16,7 +16,3 @@ const Person = (props) => {
 };
 
 export default Person;
-// osman = {
-//  name = "Osman Kara";
-// img = "https://cdn.pixabay.com/photo/2017/08/01/01/33/beanie-2562646__480.jpg";
-// tel = "555 55 55"}

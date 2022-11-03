@@ -9,7 +9,7 @@ const ButonStyle = styled.button`
   border-radius: 5px;
   font-family: "tahoma";
   &:hover {
-    transform: scale(0.95);
+    transform: scale(1.20);
   }
 `;
 export const DomatesButon = styled(ButonStyle)`

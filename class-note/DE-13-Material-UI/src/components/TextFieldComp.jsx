@@ -6,7 +6,7 @@ const TextFieldComp = () => {
   return (
     <div>
       <Container maxWidth="md">
-        <Typography variant="h4" align="center">
+        <Typography variant="h3" align="center">
           Text-Field
         </Typography>
         <Box sx={{ mt: 4, textAlign: "center" }}>
