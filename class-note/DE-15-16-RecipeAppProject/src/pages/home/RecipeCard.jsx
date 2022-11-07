@@ -1,21 +1,14 @@
 import React from "react";
-import { Button, RecipeCards, RecipeHeader, RecipeImage } from "./HomeStyles";
-// import {useNavigate} from "react-router-dom"
+import { Button, Cards, RecipeHeader, RecipeImage } from "./HomeStyles";
 
-const RecipeCard = ({ recipe1 }) => {
-  // let navigate=useNavigate();
-
-  // const detayaGit=()=>{
-  // navigate("/details", {state:{recipe1}})
-
-  // }
-
+const RecipeCard = ({ i }) => {
+  // console.log(i);
   return (
-    <RecipeCards>
-      <RecipeHeader>{recipe1.label}</RecipeHeader>
-      <RecipeImage src={recipe1.image} />
+    <Cards>
+      <RecipeHeader> {i.label} </RecipeHeader>
+      <RecipeImage src={i.image} />
       <Button>Details</Button>
-    </RecipeCards>
+    </Cards>
   );
 };
 

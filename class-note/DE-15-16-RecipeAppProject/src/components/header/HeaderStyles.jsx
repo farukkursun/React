@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const HeaderContainer = styled.div`
-  /* başlık ve 3 arama kutusunu taşıyan kutu */
+  /* başlık ve 3 arama kutusunu taşıyan kutu TURUNCU */
 
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ export const MainHeader = styled.h2`
 `;
 
 export const FormContainer = styled.form`
-  /* 3 arama kutusunun toplandığı kutu */
+  /* 3 arama kutusunun toplandığı kutu  MAVİ*/
   display: flex;
   /* flex-direction: row; */
   flex-wrap: wrap;
@@ -32,7 +32,7 @@ export const FormContainer = styled.form`
 `;
 
 export const FoodInput = styled.input`
-  /* arama yapılacak ürünün yazıldığı input */
+  /* arama yapılacak ürünün yazıldığı input AÇIK MAVİ İNPUT*/
   height: 3rem;
   width: 15rem;
   border: none;
@@ -45,7 +45,7 @@ export const FoodInput = styled.input`
 `;
 
 export const Button = styled.button`
-  /* search butonu */
+  /* search butonu GRİ*/
   /* background-color: #e1f1dd; */
   background-color: gray;
 

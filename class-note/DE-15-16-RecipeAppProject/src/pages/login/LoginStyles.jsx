@@ -41,6 +41,7 @@ export const StyledInput = styled.input`
   width: 250px;
   border-radius: 5px;
   font-family: "Girassol", sans-serif;
+  /* inuta girilen yazıyı büyük harf yapar */
   background-color: rgba(0, 0, 0, 0.6);
   border: none;
   color: white;

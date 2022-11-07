@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 export const Nav = styled.div`
-  /* açık yeşil olan navbar */
+  /* SALMON olan navbar */
   padding: 0 2rem;
   display: flex;
   justify-content: space-between; //yatayda aralıklı objeler halinde ortala
@@ -17,7 +17,7 @@ export const Nav = styled.div`
 `;
 
 export const MenuLink = styled(Link)`
-  /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri */
+  /* navbardaki 3 kelime ... tek tek about vs yazanların özellikleri YEŞİL*/
   background-color: green;
 
   padding: 1rem 2rem;
@@ -109,7 +109,7 @@ export const Logo = styled(Link)`
 
 export const Hamburger = styled.div`
   display: none;
-  /* Bir öğeyi gizleme özelliği  Öğe gizlenecek ve sayfa, öğe orada değilmiş gibi alttaki stiller yok gibi görüntülenecektir: */
+  /* Bir öğeyi gizleme özelliği  Öğe gizlenecek ve sayfa, öğe orada değilmiş gibi alttaki stiller yok gibi görüntülenecektir: hamburger ekran büyükken görünmesin 768 den küçülmeye başlayınca görünsün*/
   
   cursor: pointer;
   

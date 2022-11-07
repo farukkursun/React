@@ -1,37 +1,35 @@
 import React from "react";
 import {
+  Button,
+  FoodInput,
   FormContainer,
   HeaderContainer,
   MainHeader,
-  FoodInput,
-  Button,
   Select,
 } from "./HeaderStyles";
-
-const Header = ({ ögün, query, setQuery, setOgun, getData }) => {
-//  console.log(getData);
-const handelSubmit=(e)=>{
-  e.preventDefault()
-  getData()
-}
+const Header = ({ setOgun, setQuery, getData }) => {
+  const yapSubmit = (e) => {
+    e.preventDefault();
+    getData();
+  };
   return (
     <HeaderContainer>
-      <MainHeader>Food App</MainHeader>
-      <FormContainer onSubmit={handelSubmit}>
+      <MainHeader>FOOD APP</MainHeader>
+      <FormContainer onSubmit={yapSubmit}>
         <FoodInput
+          onChange={(e) => setQuery(e.target.value)}
           type="text"
-          id="query"
-          placeholder="search"
-          onInput={(e) => setQuery(e.target.value)}
+          placeholder="Search"
         />
         <Button type="submit">Search</Button>
-        <Select  id="ögün" onChange={(e) => setOgun(e.target.value)}>
-        
-          <option>breakfast</option>
-          <option>lunch</option>
-          <option>dinner</option>
-          <option>snack</option>
-          <option>teatime</option>
+        <Select
+          name="ögünTypes"
+          id="ögünTypes"
+          onChange={(e) => setOgun(e.target.value)}
+        >
+          <option>Breakfast</option>
+          <option>Lunc</option>
+          <option>Teatime</option>
         </Select>
       </FormContainer>
     </HeaderContainer>
