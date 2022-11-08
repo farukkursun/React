@@ -5,6 +5,8 @@ import { useState } from "react";
 import axios from "axios";
 import RecipeCard from "./RecipeCard";
 import Header from "../../components/header/Header";
+import Navbar from "../../components/navbar/Navbar";
+import Footer from "../../components/footer/Footer";
 const APP_ID = "497a376c";
 
 const APP_KEY = "3d263c2d049932a23e00bd1436bd7449";
@@ -25,6 +27,7 @@ const Home = () => {
 
   return (
     <div>
+      <Navbar />
       <Header setQuery={setQuery} setOgun={setOgun} getData={getData} />
 
       {yemekler.length > 0 ? (
@@ -38,6 +41,7 @@ const Home = () => {
           <HomeImg src={homeSvg} />
         </ImgDiv>
       )}
+      <Footer />
     </div>
   );
 };

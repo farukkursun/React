@@ -1,7 +1,12 @@
 import React from "react";
 import { Outlet, Navigate } from "react-router-dom";
+
+
+
 const PrivateRouter = () => {
-  return JSON.parse(localStorage.getItem("kullanici")) === "osman" ? (
+  return JSON.parse(localStorage.getItem("kullanici")) === "osman" &&
+  JSON.parse(localStorage.getItem("kullanicipass")) === "1234" 
+  ? (
     <Outlet />
   ) : (
     <Navigate to="/" />

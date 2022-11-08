@@ -14,7 +14,7 @@ const Details = () => {
 const location = useLocation();
 //! useLocation= useNavigate in kardeşidir, navigate in state ine yüklenen veriyi navigate in yönlendirdiği sayfada karşılar
 // navigate("/details", { state: { recipe1 } });
-const recipe= location.state.recipe1
+const recipe= location.state.i
 
 console.log(recipe);
   return (
@@ -63,7 +63,7 @@ console.log(recipe);
           {recipe.ingredientLines.map((item, indeks) => (
             <div key={indeks}>
               <p>
-                {indeks + 1 } * {item}
+                {indeks + 1 }. {item}
                 {/* ingredientLines içinde bir sürü obje var tek tek yazdır, başına no ekle 1*{malzeme} gibi */}
               </p>
             </div>
