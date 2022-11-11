@@ -1,9 +1,10 @@
-
+import AuthContext from "./context/AuthContext";
 
 function App() {
+  
   return (
     <div >
-      app
+    <AuthContext/>  
     </div>
   );
 }
