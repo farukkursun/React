@@ -30,11 +30,12 @@ const Navbar = () => {
               aria-expanded="false"
             >
               <img
-                src={currentUser.photoUrl || avatar}
+                src={currentUser.photoURL || avatar}
                 className="rounded-full"
                 style={{ height: 25, width: 25 }}
                 alt="user"
                 loading="lazy"
+                referrerPolicy="no-referrer"
               />
             </span>
             <ul
