@@ -11,8 +11,9 @@ const dispatch1= useDispatch()
     e.preventDefault();
     //!ekle fonksiyonu
     dispatch1(ekle(gorevler1.text))
-    
+   
   };
+  
   return (
     <form onSubmit={handleSubmit}>
       <input
