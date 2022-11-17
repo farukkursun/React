@@ -8,17 +8,21 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
+import {useDispatch} from 'react-redux'
+import { olusturKullanaici } from '../features/yetkiSlice';
+
 
 
 export default function Login() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const dispatch= useDispatch()
   const navigate = useNavigate();
-  
+  //!useState in set kısmı, fonksiyon vs için dispatch
   const handleSubmit = (e) => {
     e.preventDefault();
-  navigate("/");
-  //!email pasword olusturKullanici ya yollanınca beni "/" haberler sayfasına götür
+    dispatch(olusturKullanaici({email,password}))
+    navigate("/");
   };
 
   return (
