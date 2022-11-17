@@ -8,8 +8,8 @@ const yetkiSlice = createSlice({
   reducers: {
     olusturKullanaici: (state, action) => {
       state.kullanici = action.payload;
-      console.log(action);
-      console.log(state.kullanici);
+      // console.log(action);
+      // console.log(state.kullanici);
     },
     kullaniciSil:(state)=>{
       state.kullanici=''
