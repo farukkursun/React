@@ -49,10 +49,10 @@ console.log(haberler);
                 alt="img"
               />
               <CardContent>
-                <Typography gutterBottom variant="h5" component="div">
+                <Typography gutterBottom sx={{height:120}} variant="h6" component="div">
                   {item?.title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" sx={{height:120}} color="text.secondary">
                   {item?.description}
                 </Typography>
               </CardContent>
