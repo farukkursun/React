@@ -11,6 +11,7 @@ import {
 import { useEffect, useState } from "react";
 import Toastify from "./Toastify";
 
+
 export const AddUser = (info) => {
   const db = getDatabase(firebase);
 
@@ -55,6 +56,7 @@ export const DeleteUser = (id) => {
   Toastify('Deleted')
 };
 
+
 export const UpdateUser = (info) => {
   const db = getDatabase(firebase);
   // const userRef = ref(db, "users/");
@@ -65,4 +67,4 @@ export const UpdateUser = (info) => {
   return update(ref(db), updates);
 };
 
-//veriyi degistirme
+
